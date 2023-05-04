@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ShowsContext } from '../../context/ContextProvider';
+import { Link } from 'react-router-dom';
 
 const DisplayShow = ({ show }) => {
-    console.log(show);
+
+    const { setShow } = useContext(ShowsContext)
 
     return (
         <div >
@@ -20,7 +23,7 @@ const DisplayShow = ({ show }) => {
                             <h6 className="card-title">Runtime : {show?.runtime}min</h6>
                             <h6 className="card-title">Stauts : {show?.status}</h6>
 
-                            <button type="button" class="btn btn-outline-info">View Details</button>
+                            <Link to={`/show/${show?.id}`}><button onClick={() => setShow(show)} type="button" className="btn btn-outline-info">View Details</button></Link>
                         </div>
                     </div>
                 </div>
