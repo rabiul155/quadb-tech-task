@@ -1,21 +1,24 @@
-import logo from './logo.svg';
+
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
+import Main from './layout/Main';
+import Shows from './Pages/Shows/Shows';
 
 function App() {
+
+  const router = createBrowserRouter([{
+    path: '/',
+    element: <Main></Main>,
+    children: [{
+      path: '/',
+      element: <Shows></Shows>
+    }]
+  }])
+
   return (
-    <div className="App">
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-success">Success</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-      <button type="button" class="btn btn-warning">Warning</button>
-      <button type="button" class="btn btn-info">Info</button>
-      <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
+    <RouterProvider router={router}>
 
-      <button type="button" class="btn btn-link">Link</button>
-
-    </div>
+    </RouterProvider>
   );
 }
 
