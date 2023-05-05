@@ -16,7 +16,7 @@ const Shows = () => {
 
     return (
 
-        <div className=' mx-4'>
+        <div className=' my-5'>
             <div >
                 {
                     shows?.map(show => <DisplayShow
