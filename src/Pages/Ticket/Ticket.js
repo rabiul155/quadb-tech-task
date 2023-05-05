@@ -42,20 +42,20 @@ const Ticket = () => {
                     <input disabled defaultValue={show?.schedule?.days[0]} type="email" className="form-control" id="inputEmail4" />
                 </div>
                 <div className="col-md-6">
-                    <label className="form-label">Show Time</label>
+                    <label className="form-label">Show Time (EST)</label>
                     <input disabled defaultValue={show?.schedule?.time} type="text" className="form-control" />
                 </div>
                 <div className="col-md-6">
-                    <label className="form-label">Duration</label>
+                    <label className="form-label">Duration (min)</label>
                     <input disabled defaultValue={runtime} type="email" className="form-control" id="inputEmail4" />
                 </div>
                 <div className="col-md-6">
                     <label for="inputPassword4" className="form-label">Your Name</label>
-                    <input required type="text" className="form-control" />
+                    <input placeholder='Jhon Doe' required type="text" className="form-control" />
                 </div>
                 <div className="col-md-6">
                     <label for="inputEmail4" className="form-label"> Your Email</label>
-                    <input required type="email" className="form-control" id="inputEmail4" />
+                    <input placeholder='john@gmail.com' required type="email" className="form-control" id="inputEmail4" />
                 </div>
                 <div className="col-md-6">
                     <label className="form-label">Ticket Price</label>
@@ -63,12 +63,12 @@ const Ticket = () => {
                 </div>
                 <div className="col-md-6">
                     <label className="form-label">Your Card Number</label>
-                    <input required type="text" className="form-control" />
+                    <input placeholder='Demo card number' required type="text" className="form-control" />
                 </div>
 
                 <div className="col-12">
                     <label for="inputAddress" className="form-label">Address</label>
-                    <input type="text" className="form-control" id="inputAddress" placeholder="" />
+                    <input placeholder='Your address' type="text" className="form-control" id="inputAddress" />
                 </div>
 
                 <div className="col-12">
