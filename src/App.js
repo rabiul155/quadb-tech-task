@@ -16,11 +16,11 @@ function App() {
       element: <Shows></Shows>
     },
     {
-      path: 'show/:id',
+      path: '/show/:id',
       element: <Show></Show>
     },
     {
-      path: 'ticket/:id',
+      path: '/ticket/:id',
       element: <Ticket></Ticket>
     },
     ]

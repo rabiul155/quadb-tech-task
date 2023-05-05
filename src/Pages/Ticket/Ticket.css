@@ -1,0 +1,9 @@
+.ticket {
+    width: 50%;
+}
+
+@media only screen and (max-width: 920px) {
+    .ticket {
+        width: 100%;
+    }
+}

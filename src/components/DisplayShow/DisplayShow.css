@@ -1,0 +1,9 @@
+.show-card {
+    width: 75%;
+}
+
+@media only screen and (max-width: 920px) {
+    .show-card {
+        width: 100%;
+    }
+}

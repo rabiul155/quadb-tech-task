@@ -21,8 +21,8 @@ const Show = () => {
         <div>
             {
                 show ?
-                    <div className=' w-75 mx-auto mt-5'>
-                        <div className="card mb-3" >
+                    <div className=' show-card mx-auto mt-4'>
+                        <div className="card m-4 " >
                             <div className="row g-0">
                                 <div className="col-md-4 ">
                                     <img src={show?.image?.original} className="img-fluid  rounded-start" alt="..." />

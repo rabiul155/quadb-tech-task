@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './DisplayShow.css'
 
 const DisplayShow = ({ show }) => {
 
@@ -8,8 +9,8 @@ const DisplayShow = ({ show }) => {
     }
 
     return (
-        <div className=' w-75 mx-auto'>
-            <div className="card mb-3" >
+        <div className='show-card mx-auto'>
+            <div className="card m-4" >
                 <div className="row g-0">
                     <div className="col-md-3 ">
                         <img src={show?.image?.original} className="img-fluid  rounded-start" alt="..." />

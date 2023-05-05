@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Ticket.css'
 
 const Ticket = () => {
 
@@ -29,9 +30,9 @@ const Ticket = () => {
 
     return (
 
-        <div className=' w-50 mx-auto mt-5'>
+        <div className='ticket mx-auto mt-5'>
             <h2 className=' fw-bold text-center text-primary m-3'>Ticket Booking Form</h2>
-            <form onSubmit={handleSubmit} className="row g-3">
+            <form onSubmit={handleSubmit} className="row g-3 m-4">
                 <div className="col-md-6">
                     <label className="form-label">Show Name</label>
                     <input disabled defaultValue={show?.name} type="text" className="form-control" />
